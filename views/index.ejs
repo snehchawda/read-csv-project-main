@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Results</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Student Results</h1>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Student Name</th>
+        <th>Standard</th>
+        <th>Hindi</th>
+        <th>English</th>
+        <th>Social Study</th>
+        <th>History</th>
+        <th>Maths</th>
+        <th>Science</th>
+        <th>Total Marks</th>
+        <th>Average</th>
+        <th>Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data.forEach(student => { %>
+        <tr>
+          <td><%= student._id.studentName %></td>
+          <td><%= student._id.standard %></td>
+          <% student.subjects.forEach(subject => { %>
+            <td><%= subject.marks %></td>
+          <% }) %>
+          <td><%= student.totalMarks %></td>
+          <td><%= student.average.toFixed(2) %></td>
+          <td><%= student.result %></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
