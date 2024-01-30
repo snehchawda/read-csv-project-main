@@ -24,7 +24,7 @@ Main dependencies of the project with version numbers.
 
 ## Installation
 
-<!-- Clone the repository: git clone https://github.com/snehchawda/read-csv-project.git -->
+<!-- Clone the repository: git clone https://github.com/snehchawda/read-csv-project-main.git -->
 Navigate to the project folder: cd read-csv-project
 Install dependencies: npm install
 
@@ -37,6 +37,6 @@ Access the application at http://localhost:3000
 You can directly access http://localhost:3000/results
 
 ```bash
-git clone https://github.com/snehchawda/read-csv-project.git
+git clone https://github.com/snehchawda/read-csv-project-main.git
 cd read-csv-project
 npm install
