@@ -5,7 +5,6 @@
 - [Project Overview](#project-overview)
 - [Dependencies](#dependencies)
 - [Installation](#installation)
-- [Project Structure](#project-structure)
 
 ## Project Overview
 
